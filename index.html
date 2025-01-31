@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./IMG/output-onlinepngtools.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Cifrario Di Cesare</title>
+</head>
+<body>
+    <header>
+       <Center><h1 class="Titolo">Cifrario Di Cesare</h1></Center>
+        <i><center><h3 class="indicazioni">Questo tool esegue una codifica del testo usando il codice di cifratura di Cesare. Basta scrivere un
+            testo e una chiave numerica da 1 a 25.</h3></center></i>
+    </header>
+    <section>
+        <br>
+        <br>
+        <form>
+            <div class="digitaChiave">
+                <center><h3 class="testoChiaro">Digita un testo in chiaro (solo lettere maiuscole, max 1000 caratteri)</h3></center>
+                <center><textarea class="TestoParola" placeholder="Digita qui il testo" rows="15" cols="205" maxlength="1000"></textarea></center>
+                <input class="scletaNumero" type="number" min="1" max="25" placeholder="Seleziona un numero da 1 a 25">
+                <input type="radio" id="radio1" name="scelta" class="radio"><b>Codifica</b>
+                <input type="radio" id="radio2" name="scelta" class="radio"><b>Decodifica</b>
+            </div>
+            <br>
+            <button class="bottoneInvio" onclick="openPopup()">invio</button>
+        </form>
+    
+        <!-- Elemento per il risultato -->
+        <div id="risultato" style="margin-top: 20px;">
+            <b><p id="risultatoTesto" align="center" class="risultato"></p></b>
+        </div>
+    </section>
+    
+</body>
+</html>
